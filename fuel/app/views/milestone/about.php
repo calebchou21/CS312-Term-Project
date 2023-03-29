@@ -24,7 +24,7 @@
                   aliquam quaerat.
             </p>
         </div>
-        <div class="teamimg"><img src="jakePhoto.jpeg" alt=""></div>
+        <div class="teamimg"></div>
         <div class="person">
             <h2>Jake Stinson</h2>
             <p>Hello! I am a 2nd year computer science major at Colorado State University. 
@@ -36,6 +36,6 @@
 
             </p>
         </div>
-        <div class="teamimg"><img src="" alt=""></div>
+        <div class="teamimg"><?php echo Asset::img("jakePhoto.jpeg") ?></div>
     </div>
 </div>
