@@ -24,7 +24,7 @@
                   aliquam quaerat.
             </p>
         </div>
-        <div class="teamimg"><img src="" alt=""></div>
+        <div class="teamimg"><img src="jakePhoto.jpeg" alt=""></div>
         <div class="person">
             <h2>Jake Stinson</h2>
             <p>Hello! I am a 2nd year computer science major at Colorado State University. 
@@ -33,7 +33,7 @@
                 rock climbing, running, playing video games, watching movies, or spending time volunteering
                 for a program called Young Life. I also work part-time at Starbucks. A fun fact about me is
                 that I have signed up for the show Survivor two times and will sign up until I get on the show!
-                
+
             </p>
         </div>
         <div class="teamimg"><img src="" alt=""></div>
