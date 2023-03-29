@@ -5,14 +5,105 @@
 }
 
 html{
-    background-color: rgb(243, 249, 255);
+    background-color: #ddefff;
 }
 
-.header{
+p{
+    text-align: center; 
+    font-size: 1.3em;
+}
+
+header{
     text-align: center;
-    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #ddefff;
+    margin-top: 20px;
 }
 
-.header h1{
+header h1{
+    padding-top: 2%;
     font-size: 90px;
+    margin-bottom: 10px;
 }
+
+header hr {
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+header h2{
+    padding-bottom: 2%;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar li{
+    display: flex;
+    height: 50px;
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.navbar li a{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+#hometext{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+
+.about{
+    margin: 5% 6%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.person{
+    margin: 10% 10%;
+}
+
+.person h2{
+    font-size: 2em;
+    text-align: left;
+}
+
+.person p{
+    text-align: left;
+}
+
+.teamimg{
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 400px;
+    max-width: 300px;
+    height: 400px;
+    max-height: 700px;
+}
+
