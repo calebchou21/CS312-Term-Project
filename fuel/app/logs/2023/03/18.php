@@ -1,0 +1,62 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+ERROR - 2023-03-18 12:19:05 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:20:03 --> Notice - Undefined variable: title in /s/bach/c/under/calebrc/fuel/app/views/template.php on line 18
+ERROR - 2023-03-18 12:20:45 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:20:50 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:23:17 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:23:27 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:23:35 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:23:43 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:23:47 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:25:38 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:25:40 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:25:49 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:26:00 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:27:03 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:27:10 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:27:45 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:30:00 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:31:10 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:32:43 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:33:28 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:37:35 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:37:36 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:37:38 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:37:39 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:37:40 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:39:13 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:39:19 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:40:03 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:41:48 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:41:51 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:41:59 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:43:32 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:43:53 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:43:58 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:44:01 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:44:14 --> Fatal Error - Method Fuel\Core\View::__toString() must not throw an exception, caught ParseError: syntax error, unexpected '".css"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /s/bach/c/under/calebrc/fuel/core/classes/response.php on line 0
+ERROR - 2023-03-18 12:44:27 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:45:25 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:45:36 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:45:50 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:45:53 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:45:59 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:46:00 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:46:01 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:46:04 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:48:05 --> Warning - A non-numeric value encountered in /s/bach/c/under/calebrc/fuel/app/views/template.php on line 26
+ERROR - 2023-03-18 12:48:17 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:48:18 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:49:40 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:56:56 --> Error - Call to undefined method Fuel\Core\Asset_Instance::images() in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 142
+ERROR - 2023-03-18 12:57:14 --> Error - Could not find asset: movie-homeimg.webp in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:58:07 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 12:58:59 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 13:02:27 --> Error - Image file  does not exist. in /s/bach/c/under/calebrc/fuel/core/classes/image/driver.php on line 155
+ERROR - 2023-03-18 13:02:35 --> Error - Image file  does not exist. in /s/bach/c/under/calebrc/fuel/core/classes/image/driver.php on line 155
+ERROR - 2023-03-18 13:02:42 --> Error - Image file  does not exist. in /s/bach/c/under/calebrc/fuel/core/classes/image/driver.php on line 155
+ERROR - 2023-03-18 13:02:44 --> Error - Image file  does not exist. in /s/bach/c/under/calebrc/fuel/core/classes/image/driver.php on line 155
+ERROR - 2023-03-18 13:02:59 --> Error - Image file  does not exist. in /s/bach/c/under/calebrc/fuel/core/classes/image/driver.php on line 155
+ERROR - 2023-03-18 13:06:13 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
+ERROR - 2023-03-18 13:18:29 --> Error - Could not find asset: bootstrap.css in /s/bach/c/under/calebrc/fuel/core/classes/asset/instance.php on line 413
