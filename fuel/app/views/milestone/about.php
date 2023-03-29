@@ -15,16 +15,15 @@
         <div class="teamimg"><img src="" alt=""></div>
         <div class="person">
             <h2>Caleb Chou</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Doloribus quos cupiditate quam officiis? Modi tempore mai
-                ores id accusantium et aspernatur provident optio facilis 
-                commodi ea incidunt corporis dignissimos ex alias dolorem,
-                 veritatis dolorum laborum error quas dolore dolor? Totam e
-                 veniet aut fuga rem illo laboriosam nesciunt numquam nihil
-                  aliquam quaerat.
+            <p>
+                 I am a second year computer science student here at Colorado State. I'm originally from Portland, Oregon but moved here for school.
+                 In my spare time I love to go outdoors and rock climb or hike. I also love to read, play the drums, and watch movies.
+                 Currently I am enrolled in the general computer science concentration but would like 
+                 to explore all the options that the field has to offer. A fun fact about me is that I have 
+                 traveled all around the world to rock climb.
             </p>
         </div>
-        <div class="teamimg"><img src="jakePhoto.jpeg" alt=""></div>
+        <div class="teamimg"></div>
         <div class="person">
             <h2>Jake Stinson</h2>
             <p>Hello! I am a 2nd year computer science major at Colorado State University. 
