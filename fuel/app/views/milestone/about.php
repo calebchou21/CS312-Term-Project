@@ -2,17 +2,11 @@
     <h2 id="#about-header">About Our Team</h2>
     <div class="about">
         <div class="person">
-            <h2>Clay</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Doloribus quos cupiditate quam officiis? Modi tempore mai
-                ores id accusantium et aspernatur provident optio facilis 
-                commodi ea incidunt corporis dignissimos ex alias dolorem,
-                 veritatis dolorum laborum error quas dolore dolor? Totam e
-                 veniet aut fuga rem illo laboriosam nesciunt numquam nihil
-                  aliquam quaerat.
+            <h2>Clay Kleespies/h2>
+            <p>I am a senior majoring in computer science and minoring in business. I plan on using my education to persue a career at NASA. I want to go to space and use my computer science knowledge to advance space exploration. I am enrolled in the honors option at Colorado State University. I am graduating from college in three years. I have a black belt in Muay Thai.
             </p>
         </div>
-        <div class="teamimg"><img src="" alt=""></div>
+        <div class="teamimg"><?php echo Asset::img("ClayKleespies.jpeg") ?></div>
         <div class="person">
             <h2>Caleb Chou</h2>
             <p>
@@ -35,6 +29,6 @@
 
             </p>
         </div>
-        <div class="teamimg"><img src="" alt=""></div>
+        <div class="teamimg"><?php echo Asset::img("jakePhoto.jpeg") ?></div>
     </div>
 </div>
