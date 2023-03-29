@@ -22,9 +22,9 @@
 <body>
     <header>
         <div class="header" >
-            <h1>Company</h1>
+            <h1>JCC Incorporated</h1>
             <hr>
-            <h2>Subheader</h2>
+            <h2>An awesome company</h2>
         </div>
         <div class="navbar">
             <li><a 
