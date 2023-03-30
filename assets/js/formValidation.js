@@ -28,6 +28,19 @@ let formWidget = document.querySelector("#color-form");
 formWidget.addEventListener("submit", checkForm);
 
 function checkForm(event) {
+
+   if(!colorValid){
+      colorWidget.classList.add("invalid");
+   }else{
+      colorWidget.classList.remove("invalid");
+   }
+
+   if(!rowColValid){
+      rowColWidget.classList.add("invalid");
+   }else{
+      rowColValid.classList.remove("invalid");
+   }
+
    if (!colorValid || !rowColValid) {
       event.preventDefault();
    }
