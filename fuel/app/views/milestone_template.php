@@ -28,7 +28,13 @@
         </div>
         <div class="navbar">
             <li><a 
-            href="https://cs.colostate.edu:4444/~calebrc/m1/index.php/milestone/">Home</a></li>
+            <?php 
+            if(checkURL()){
+                echo 'href="./index.php/milestone/index"';
+            }else{
+                echo 'href="./index"';
+            } 
+            ?>>Home</a></li>
             <li><a 
             <?php 
             if(checkURL()){
