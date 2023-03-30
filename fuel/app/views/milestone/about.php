@@ -2,11 +2,11 @@
     <h2 id="#about-header">About Our Team</h2>
     <div class="about">
         <div class="person">
-            <h2>Clay Kleespies/h2>
+            <h2>Clay Kleespies</h2>
             <p>I am a senior majoring in computer science and minoring in business. I plan on using my education to persue a career at NASA. I want to go to space and use my computer science knowledge to advance space exploration. I am enrolled in the honors option at Colorado State University. I am graduating from college in three years. I have a black belt in Muay Thai.
             </p>
         </div>
-        <div class="teamimg"><?php echo Asset::img("ClayKleespies.jpeg") ?></div>
+        <div class="teamimg"><?php echo Asset::img("ClayKleespies.jpg") ?></div>
         <div class="person">
             <h2>Caleb Chou</h2>
             <p>
