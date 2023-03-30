@@ -1,7 +1,6 @@
 <?php 
         function checkURL(){    
-            $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-            if(strcmp($url, "http://www.cs.colostate.edu/~calebrc/m1/")==0){
+            if(strlen($_SERVER['REQUEST_URI']) < 20){
                 return true;
             } else{
                 return false;
@@ -27,14 +26,7 @@
             <h2>An awesome company</h2>
         </div>
         <div class="navbar">
-            <li><a 
-            <?php 
-            if(checkURL()){
-                echo 'href="./index.php/milestone/index"';
-            }else{
-                echo 'href="./index"';
-            } 
-            ?>>Home</a></li>
+            <li><a href = "./index">Home</a></li>
             <li><a 
             <?php 
             if(checkURL()){
