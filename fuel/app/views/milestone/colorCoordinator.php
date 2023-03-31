@@ -67,7 +67,23 @@ if($table){
     echo "</table>";
 
     echo '<table id=table2>';
+    
 
+    $letter = 'A';
+    $number = 1;
+
+    for($i=0; $i <= $rowCols; $i++){
+        echo '<tr>';
+        
+        for($j=0; $j <= $rowCols; $j++){
+            echo '<td>';
+            if($i == 0 && $j==0){continue;}
+            if($i==0){echo '<p>'; echo $letter++; echo '</p>';} 
+            if($j==0){echo '<p>'; echo $number++; echo '</p>';}
+            echo '</td>';
+        }
+        echo '</tr>';
+    }
     echo '</table>';
 
 
