@@ -21,8 +21,8 @@
 <body>
     <header>
         <div class="header" >
-            <h1>JCC Incorporated</h1>
             <div><?php echo Asset::img("goodLogo.png", array('id'=>'logo')) ?></div>
+            <h1>JCC Incorporated</h1>
             <h2>An awesome company</h2>
         </div>
         <div class="navbar">
@@ -45,6 +45,6 @@
         </div>
     </header>
     
-    <?php echo $content ?>
+    <div class = "content"><?php echo $content ?></div>
 </body>
 </html>
