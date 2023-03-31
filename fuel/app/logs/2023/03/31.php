@@ -41,4 +41,8 @@ ERROR - 2023-03-31 15:20:16 --> Notice - Undefined variable: colors in /s/bach/c
 ERROR - 2023-03-31 15:20:31 --> Notice - Undefined variable: colors in /s/bach/c/under/calebrc/local_html/m1/fuel/app/views/milestone/colorCoordinator.php on line 24
 ERROR - 2023-03-31 15:21:49 --> Notice - Undefined variable: colors in /s/bach/c/under/calebrc/local_html/m1/fuel/app/views/milestone/colorCoordinator.php on line 19
 ERROR - 2023-03-31 15:28:56 --> Warning - Use of undefined constant j - assumed 'j' (this will throw an Error in a future version of PHP) in /s/bach/c/under/calebrc/local_html/m1/fuel/app/views/milestone/colorCoordinator.php on line 28
+<<<<<<< HEAD
 >>>>>>> 183b6ab089c76defab8ccb31399d4c43ea9c583e
+=======
+ERROR - 2023-03-31 16:20:32 --> Warning - A non-numeric value encountered in /s/bach/c/under/calebrc/local_html/m1/fuel/app/views/milestone/colorCoordinator.php on line 75
+>>>>>>> 90c9587fc8329afa1d17d2fb9ea6bfc46f8ad463
