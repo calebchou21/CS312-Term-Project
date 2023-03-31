@@ -22,7 +22,7 @@
     <header>
         <div class="header" >
             <h1>JCC Incorporated</h1>
-            <div class="teamimg"><?php echo Asset::img("goodLogo.png") ?></div>
+            <div><?php echo Asset::img("goodLogo.png", array('id'=>'logo')) ?></div>
             <h2>An awesome company</h2>
         </div>
         <div class="navbar">
