@@ -5,25 +5,28 @@
 }
 
 html{
-    background-color: #ddefff;
+    background-color: #2b2d2e;
 }
 
 p{
     text-align: center; 
     font-size: 1.3em;
+    color: #ffffff;
 }
 
 header{
     text-align: center;
     margin-bottom: 2%;
-    background-color: #ddefff;
+    background-color: #2b2d2e;
     margin-top: 20px;
+    color: #ffffff;
 }
 
 header h1{
     padding-top: 2%;
     font-size: 90px;
     margin-bottom: 10px;
+    color: red;
 }
 
 header hr {
@@ -34,6 +37,7 @@ header hr {
 
 header h2{
     padding-bottom: 2%;
+    color: orange;
 }
 
 .navbar{
@@ -49,31 +53,33 @@ header h2{
 .navbar li{
     display: flex;
     height: 50px;
-    background-color: black;
+    background-color: yellow;
     list-style-type: none;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid rgb(87, 8, 8);
     border-radius: 5px;
+    color: black;
 }
 
 .navbar li a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
 
 #hometext{
     width: 50vw;
     margin: 0 auto;
+    color: white;
 }
 
 h2{
-    text-align: center;
     font-size: 3em;
+    color: white;
 }
 
 
@@ -92,10 +98,12 @@ h2{
 .person h2{
     font-size: 2em;
     text-align: left;
+    color: white;
 }
 
 .person p{
     text-align: left;
+    color: white;
 }
 
 .teamimg{
@@ -139,10 +147,17 @@ input, button{
 button{
     width: 50%;
     padding: 0;
+    background-color:yellow;
+    border: 2px solid rgb(87, 8, 8);
+
+}
+
+label{
+    color:white;
 }
 
 .invalid{
-    border: 2px solid red;
+    border: 2px solid rgb(248, 203, 4);
 }
 
 .error-message{
