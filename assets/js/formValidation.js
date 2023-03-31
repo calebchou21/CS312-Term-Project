@@ -19,11 +19,7 @@ rowColWidget.addEventListener("keyup", checkRowCols);
 
 function checkRowCols(){
    let rowCols = rowColWidget.value;
-   let rowColsArr = [];
-   rowCols = rowCols.trim();
-   rowColsArr = rowCols.split("/");
-   rowColsArr = rowColsArr.filter(e => String(e).trim());
-   rowColValid = (rowColsArr.length == 2) && !rowColsArr.some(el => el > 26) && !rowColsArr.some(el => el < 1);
+   rowColValid = rowCols >=1 && rowCols <= 26;
    return rowColValid;
 }
 
