@@ -184,3 +184,21 @@ label{
 .invisible{
     display: none;
 }
+
+table{
+    margin: 0 auto;
+}
+
+table,  td {
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+#table1{
+    margin-bottom: 2%;
+}
+
+td{
+    color: white;
+    font-size: 1.5em;
+}
