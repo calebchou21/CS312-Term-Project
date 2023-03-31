@@ -154,6 +154,7 @@ button{
 
 label{
     color:white;
+    font-size: 1.3em;
 }
 
 .invalid{
@@ -162,7 +163,7 @@ label{
 
 .error-message{
     text-align: left;
-    font-size: medium;
+    font-size: 1.2em;
     color: red;
     margin-top: 4px;
     display: block;
