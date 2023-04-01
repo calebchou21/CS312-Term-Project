@@ -1,7 +1,7 @@
  <?php  echo Asset::js("formValidation.js", array('defer'=>''));  ?>  
 
 <form method="get" id="color-form">
-    <label for="rows-columns">Enter number of rows and columns (Rows/Columns):</label>   
+    <label for="rows-columns">Enter number of rows and columns:</label>   
     <p class="invisible" id="rowColError">Please enter number 1-26</p>
     <input type="text" id="rows-columns" name="rows-columns">
     <label for="num-colors">Enter number of colors:</label>
@@ -17,14 +17,17 @@
 if($table){   
 
     //build first table
+    echo '<form method="post" name="colorTable">';
     echo '<table id=table1>';
+    $used = array();
         for($i=0; $i < $colors; $i++){
 
             //Build first column 
             echo "<tr>";
             echo "<td>";
-            echo "<select>";
 
+            echo '<select name = '.$i.'>';
+    
             //Build drop down menus (this sucks)
             echo '<option value="red" '; 
             if($i==0){echo "selected";}
@@ -56,11 +59,12 @@ if($table){
             echo '<option value="teal" '; 
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
-            echo "</select>"; 
+            echo "</select>";
             echo "</td>";
 
+            $j = $i +1;
             echo "<td>";
-            echo "<p>2nd Row</p>";
+            echo "<p>".$j." Row</p>";
             echo "</td>";
             echo "</tr>";
         }
@@ -85,9 +89,14 @@ if($table){
         echo '</tr>';
     }
     echo '</table>';
+    
+    echo '<input type="submit" value="Print View">';
+    echo '</form>'
+
 
 
 }
+    
 
 ?>
 
