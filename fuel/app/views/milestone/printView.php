@@ -3,7 +3,7 @@
 <h2>An awesome company</h2>
 <br><br><br>
 <?php
-echo '<table id=table1>';
+echo '<table id="table1">';
         for($i=0; $i < $colors; $i++){
             //Build first column 
             echo "<tr>";
@@ -18,7 +18,7 @@ echo '<table id=table1>';
         }
 echo '</table>';
     
-echo '<table>';
+echo '<table id="table2">';
     $letter = 'A';
     $number = 1;
 
@@ -36,3 +36,4 @@ echo '<table>';
     }
     echo '</table>';
     ?>
+git 
