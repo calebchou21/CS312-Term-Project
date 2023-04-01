@@ -91,7 +91,7 @@ if($table){
     echo '</table>';
     
     echo '<input type="submit" value="Print View">';
-    echo '</form>'
+    echo '</form>';
 
 
 
