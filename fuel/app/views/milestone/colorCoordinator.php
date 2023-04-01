@@ -22,7 +22,7 @@
             } 
             ?>>Color Coordinator</a></li>
         </div>
-    </header>
+</header>
  <?php  echo Asset::js("formValidation.js", array('defer'=>''));  ?>  
 
 <form method="get" id="color-form">
@@ -33,7 +33,10 @@
     <p class="invisible" id="colorError">Please enter number 1-10</p>  
     <input type="number" id="num-colors" name="num-colors">
     <button type="submit">Submit</button>
+    <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
+
+
 
 
 <?php 
@@ -50,7 +53,10 @@ if($table){
             echo "<tr>";
             echo "<td>";
 
-            echo '<select name = '.$i.'>';
+            echo '<select id = ';
+            echo 'selector';
+            echo $i;
+            echo ' onchange="validateDropdown()">';
     
             //Build drop down menus (this sucks)
             echo '<option value="red" '; 
