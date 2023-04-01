@@ -15,3 +15,4 @@ ERROR - 2023-03-31 14:05:00 --> Error - Call to undefined function validateGET()
 ERROR - 2023-03-31 14:05:23 --> Error - Call to undefined function validateGET() in /s/bach/c/under/calebrc/local_html/m1/fuel/app/classes/controller/milestone.php on line 21
 ERROR - 2023-03-31 14:05:49 --> Error - Call to undefined function validateGET() in /s/bach/c/under/calebrc/local_html/m1/fuel/app/classes/controller/milestone.php on line 44
 
+ERROR - 2023-03-31 19:38:47 --> Notice - Undefined variable: globalColor in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/app/classes/controller/milestone.php on line 58

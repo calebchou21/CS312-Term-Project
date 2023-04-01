@@ -1,7 +1,9 @@
 <?php
 class Controller_Milestone extends Controller_Template {
 
-   public $template = 'milestone_template'; 
+   public $template = 'milestone_template';
+   public $globalColor;
+   public $globalRow;
 
 
    public function action_index() {
@@ -39,6 +41,8 @@ class Controller_Milestone extends Controller_Template {
                $data['rowCols'] = $rowCols;
                $data['colors'] = $colorNum;
                $data['table'] = true;
+               $this->globalColor = $colorNum;
+               $this->globalRow = $rowCols;
           }
       }else{
           $data['table'] = false;
@@ -47,10 +51,12 @@ class Controller_Milestone extends Controller_Template {
         
    }
 
-   public function action_printView(){
+   public function action_printView($colors, $rowCols){
        $data = array();
        $this->template->title = 'Print View';
        $this->template->css = 'greyscale.css';
+       $data['colors'] = $colors;
+       $data['rowCols'] = $rowCols;
        $this->template->content = View::forge('milestone/printView', $data);
    }
 

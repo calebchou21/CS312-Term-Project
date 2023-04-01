@@ -1,0 +1,33 @@
+
+#logo{
+    margin-right: 2%;
+    float:left;
+    border: 2px solid black;    
+    height:100px;
+    width: 100px;
+}
+
+h1{
+    margin: 0 auto;
+}
+h2{
+    margin: 0 auto;
+}
+
+table{
+    float: none;
+}
+
+table,  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+#table1{
+    margin-bottom: 2%;
+}
+
+td{
+    color: black;
+    font-size: 1.5em;
+}
