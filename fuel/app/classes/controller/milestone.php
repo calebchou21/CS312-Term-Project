@@ -7,12 +7,14 @@ class Controller_Milestone extends Controller_Template {
    public function action_index() {
        $data = array();
        $this->template->title = 'Home Page';
+       $this->template->css = 'milestone.css';
        $this->template->content = View::forge('milestone/index', $data); 
    }
 
    public function action_about(){
         $data = array();
         $this->template->title = 'About';
+        $this->template->css = 'milestone.css';
         $this->template->content = View::forge('milestone/about', $data); 
    }
 
@@ -20,6 +22,7 @@ class Controller_Milestone extends Controller_Template {
         $data = array();
         $this->template->title = 'Color Coordinator';
         $data['table'] = false;
+        $this->template->css = 'milestone.css';
         if(isset($_GET['rows-columns']) && isset($_GET['num-colors'])){
           //get GET params and trim 
            $rowCols = $_GET['rows-columns'];
@@ -42,6 +45,13 @@ class Controller_Milestone extends Controller_Template {
       }
         $this->template->content = View::forge('milestone/colorCoordinator', $data);
         
+   }
+
+   public function action_printView(){
+       $data = array();
+       $this->template->title = 'Print View';
+       $this->template->css = 'greyscale.css';
+       $this->template->content = View::forge('milestone/printView', $data);
    }
 
    
