@@ -61,17 +61,21 @@ let colorError = document.querySelector("#colorFormError");
 
 
 function validateDropdown(){
-   var selected = []
-
+   var selected = [];
+   var colors = ['red','orange','yellow','green','blue','purple','grey','brown','black','teal'];
+   var count = -1;
    for(x of allSelectors){
       selected.push(x.value);
+      count++;
+      if((new Set(selected)).size !== selected.length){
+         colorError.classList.remove("invisible");
+         colorError.classList.add("error-message");
+         x.value = colors[count];
+      }else{
+         colorError.classList.remove("error-message");
+         colorError.classList.add("invisible");
+      }
    }
 
-   if((new Set(selected)).size !== selected.length){
-      colorError.classList.remove("invisible");
-      colorError.classList.add("error-message");
-   }else{
-      colorError.classList.remove("error-message");
-      colorError.classList.add("invisible");
-   }
+   
 }
