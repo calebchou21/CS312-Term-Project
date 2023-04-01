@@ -52,6 +52,26 @@ function checkForm(event) {
       colorErrorMessage.classList.remove("error-message");
       colorErrorMessage.classList.add("invisible")
    }
-
+ 
    
+}
+
+let allSelectors = document.getElementsByTagName("select");
+let colorError = document.querySelector("#colorFormError");
+
+
+function validateDropdown(){
+   var selected = []
+
+   for(x of allSelectors){
+      selected.push(x.value);
+   }
+
+   if((new Set(selected)).size !== selected.length){
+      colorError.classList.remove("invisible");
+      colorError.classList.add("error-message");
+   }else{
+      colorError.classList.remove("error-message");
+      colorError.classList.add("invisible");
+   }
 }
