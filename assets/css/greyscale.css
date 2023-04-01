@@ -15,7 +15,8 @@ h2{
 }
 
 table{
-    float: none;
+    margin: auto;
+    float: left;
 }
 
 table,  td {
@@ -24,8 +25,15 @@ table,  td {
   }
 
 #table1{
-    margin-bottom: 2%;
+    float: left;
+
 }
+
+#table2{
+    float: left;
+
+}
+
 
 td{
     color: black;
