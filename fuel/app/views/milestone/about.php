@@ -17,7 +17,7 @@
                  traveled all around the world to rock climb.
             </p>
         </div>
-        <div class="teamimg"></div>
+        <div class="teamimg"><?php echo Asset::img("caleb-pic.jpg") ?></div>
         <div class="person">
             <h2>Jake Stinson</h2>
             <p>Hello! I am a 2nd year computer science major at Colorado State University. 
