@@ -53,15 +53,20 @@ if($table){
             echo "<tr>";
             echo "<td>";
 
+            
+
             echo '<select id = ';
             echo 'selector';
             echo $i;
             echo ' onchange="validateDropdown()">';
+
+            
     
             //Build drop down menus (this sucks)
             echo '<option value="red" '; 
             if($i==0){echo "selected";}
             echo '> Red </Option>';
+           
             echo '<option value="orange" '; 
             if($i==1){echo "selected";}
             echo '> Orange </Option>';
@@ -90,7 +95,17 @@ if($table){
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
             echo "</select>";
+
+
+            echo "<input type='radio' name='options' value='option1' ";
+            if ($i == 0) {
+                echo "checked";
+            }
+            echo ">";
+
             echo "</td>";
+
+           
 
             $j = $i +1;
             echo "<td>";
