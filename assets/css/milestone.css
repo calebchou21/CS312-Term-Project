@@ -142,10 +142,13 @@ img{
 
 form{
     margin: 0 auto;
-    width: 300px;
+    width: 100%;
+    text-align: center;
 }
 
-
+.submit{
+    width: 10%;
+}
 
 input, button{
     display: block;
@@ -164,6 +167,7 @@ button{
     border: 2px solid rgb(87, 8, 8);
 
 }
+
 
 label{
     color:white;
@@ -187,7 +191,6 @@ label{
 }
 
 table{
-    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -197,8 +200,8 @@ td, th {
   }
 
 #table1{
-    margin-bottom: 10%;
-
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 #table1 tr td:first-child{
@@ -210,9 +213,16 @@ td{
     font-size: 1.5em;
 }
 
+#table2{
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #table2 td{
     width: 50px;
     height: 50px;
+    text-align: center;
 }
 
 

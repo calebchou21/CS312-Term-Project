@@ -17,21 +17,34 @@ h2{
 table{
     margin: auto;
     float: left;
+    border-collapse: collapse;
 }
 
-table,  td {
+td, th {
     border: 1px solid black;
     padding: 5px;
   }
 
 #table1{
     float: left;
+    margin-right: 10%;
+}
 
+#table1 td tr:first-child{
+    width: 20%;
+}
+
+#table td tr:last-child{
+    width: 80%;
 }
 
 #table2{
     float: left;
+}
 
+#table2 td{
+    width: 5%;
+    height: 5%;
 }
 
 

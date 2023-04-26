@@ -32,7 +32,7 @@
     <label for="num-colors">Enter number of colors:</label>
     <p class="invisible" id="colorError">Please enter number 1-10</p>  
     <input type="number" id="num-colors" name="num-colors">
-    <button type="submit">Submit</button>
+    <button class="submit" type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
 
@@ -135,7 +135,7 @@ if($table){
     }
     echo '</table>';
     
-    echo '<button type="submit">Print View</button>';
+    echo '<button class="submit" type="submit">Print View</button>';
     echo '</form>';
 
 
