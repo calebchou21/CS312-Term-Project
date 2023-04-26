@@ -179,7 +179,7 @@ label{
 }
 
 .error-message{
-    text-align: left;
+    text-align: center;
     font-size: 1.2em;
     color: red;
     margin-top: 4px;
