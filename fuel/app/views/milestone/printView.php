@@ -8,7 +8,7 @@ echo '<table id="table1">';
             //Build first column 
             echo "<tr>";
             echo "<td>";
-            if(isset($_POST[$i])) echo $_POST[$i];
+            if(isset($_POST['Color'.$i])) echo $_POST['Color'.$i];
             echo "</td>";
             $j = $i +1;
             echo "<td>";
