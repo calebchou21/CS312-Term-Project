@@ -53,40 +53,39 @@ if($table){
             echo "<tr>";
             echo "<td>";
 
-            echo '<select id = ';
-            echo 'selector';
+            echo '<select name = "Color'.$i.'" id = "selector';
             echo $i;
-            echo ' onchange="validateDropdown()">';
+            echo '" onchange="validateDropdown()">';
     
             //Build drop down menus (this sucks)
-            echo '<option value="red" '; 
+            echo '<option value="Red" '; 
             if($i==0){echo "selected";}
             echo '> Red </Option>';
-            echo '<option value="orange" '; 
+            echo '<option value="Orange" '; 
             if($i==1){echo "selected";}
             echo '> Orange </Option>';
-            echo '<option value="yellow" '; 
+            echo '<option value="Yellow" '; 
             if($i==2){echo "selected";}
             echo '> Yellow </Option>';
-            echo '<option value="green" '; 
+            echo '<option value="Green" '; 
             if($i==3){echo "selected";}
             echo '> Green </Option>';
-            echo '<option value="blue" '; 
+            echo '<option value="Blue" '; 
             if($i==4){echo "selected";}
             echo '> Blue </Option>';
-            echo '<option value="purple" '; 
+            echo '<option value="Purple" '; 
             if($i==5){echo "selected";}
             echo '> Purple </Option>';
-            echo '<option value="grey" '; 
+            echo '<option value="Grey" '; 
             if($i==6){echo "selected";}
             echo '> Grey </Option>';
-            echo '<option value="brown" '; 
+            echo '<option value="Brown" '; 
             if($i==7){echo "selected";}
             echo '> Brown </Option>';
-            echo '<option value="black" '; 
+            echo '<option value="Black" '; 
             if($i==8){echo "selected";}
             echo '> Black </Option>';
-            echo '<option value="teal" '; 
+            echo '<option value="Teal" '; 
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
             echo "</select>";
