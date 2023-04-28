@@ -93,7 +93,6 @@ function colorCell(cell) {
 
 var table = document.getElementById("table2");
 var rows = table.getElementsByTagName("tr");
-var coordinatesElement = document.getElementById("coordinates");
 
 for (var i = 0; i < rows.length; i++) {
   var cells = rows[i].getElementsByTagName("td");
@@ -101,10 +100,9 @@ for (var i = 0; i < rows.length; i++) {
     cells[j].addEventListener("click", function() {
       var cellIndex = this.cellIndex;
       var rowIndex = this.parentNode.rowIndex;
-      var coords = String.fromCharCode(65 + cellIndex) + (rowIndex + 1);
-      coordinatesElement.innerHTML = "Coordinates: " + coords;
+      var coords = String.fromCharCode(64 + cellIndex) + (rowIndex);
+      alert("Coordinates: " + coords);
     });
   }
 }
-
 

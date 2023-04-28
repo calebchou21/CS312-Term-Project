@@ -143,6 +143,7 @@ if($table){
         echo '</tr>';
     }
     echo '</table>';
+    echo '<div id="coordsContainer"></div>';
     
     echo '<button type="submit">Print View</button>';
     echo '</form>';
