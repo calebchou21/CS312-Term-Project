@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #2b2d2e;
+}
+
+p{
+    text-align: center; 
+    font-size: 1.3em;
+    color: #e2d5d5;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2%;
+    background-color: #2b2d2e;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+header img{
+    float:left;
+}
+
+header h1{
+    padding-top: 2%;
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: black;
+    background-color:red;
+}
+
+header hr {
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+header h2{
+    padding-bottom: 2%;
+    color: black;
+    background-color: orange;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    gap: 5px;
+    background-color:#2b2d2e;
+    
+}
+
+.content{
+    float: clear;
+}
+
+.navbar li{
+    display: flex;
+    height: 50px;
+    background-color: yellow;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(87, 8, 8);
+    border-radius: 5px;
+    color: black;
+}
+
+.navbar li a{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+
+#hometext{
+    width: 50vw;
+    margin: 0 auto;
+    color: white;
+}
+
+h2{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
+.about{
+    margin: 5% 6%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.person{
+    margin: 10% 10%;
+}
+
+.person h2{
+    font-size: 2em;
+    text-align: left;
+    color: white;
+}
+
+.person p{
+    text-align: left;
+    color: white;
+}
+
+.teamimg{
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 400px;
+    max-width: 300px;
+    height: 400px;
+    max-height: 700px;
+    margin: auto;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    border: 2px solid black;    
+    height:100px;
+    width: 100px;
+}
+
+
+form{
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+
+input, button{
+    display: block;
+    margin: 20px auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+button{
+    width: 50%;
+    padding: 0;
+    background-color:yellow;
+    border: 2px solid rgb(87, 8, 8);
+
+}
+
+label{
+    color:white;
+    font-size: 1.3em;
+}
+
+.invalid{
+    border: 2px solid rgb(248, 203, 4);
+}
+
+.error-message{
+    text-align: left;
+    font-size: 1.2em;
+    color: red;
+    margin-top: 4px;
+    display: block;
+}
+
+.invisible{
+    display: none;
+}
+
+table{
+    margin: 0 auto;
+}
+
+table,  td {
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+#table1{
+    margin-bottom: 2%;
+}
+
+td{
+    color: white;
+    font-size: 1.5em;
+}
