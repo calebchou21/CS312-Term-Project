@@ -32,7 +32,7 @@
     <label for="num-colors">Enter number of colors</label>
     <p class="invisible" id="colorError">Please enter number 1-10</p>  
     <input type="number" id="num-colors" name="num-colors">
-    <button class="submit" type="submit">Submit</button>
+    <button type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
 
@@ -53,15 +53,25 @@ if($table){
             echo "<tr>";
             echo "<td>";
 
-            echo '<select name = "Color'.$i.'" id = "selector';
+
+           
+
+            echo '<select id = ';
+            echo 'selector';
             echo $i;
-            echo '" onchange="validateDropdown()">';
+            echo ' onchange="validateDropdown()">';
+
+            
+
     
             //Build drop down menus (this sucks)
             echo '<option value="Red" '; 
             if($i==0){echo "selected";}
             echo '> Red </Option>';
-            echo '<option value="Orange" '; 
+
+           
+            echo '<option value="orange" '; 
+
             if($i==1){echo "selected";}
             echo '> Orange </Option>';
             echo '<option value="Yellow" '; 
@@ -89,7 +99,17 @@ if($table){
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
             echo "</select>";
+
+
+            echo "<input type='radio' name='options' value='option1' ";
+            if ($i == 0) {
+                echo "checked";
+            }
+            echo ">";
+
             echo "</td>";
+
+           
 
             $j = $i +1;
             echo "<td>";
@@ -109,17 +129,21 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
-            echo '<td>';
+            echo "<td onclick='colorCell(this)'>";
+           
             if($i == 0 && $j==0){continue;}
+            
             if($i==0){echo '<p>'; echo $letter++; echo '</p>';} 
             if($j==0){echo '<p>'; echo $number++; echo '</p>';}
+             
             echo '</td>';
+            
         }
         echo '</tr>';
     }
     echo '</table>';
     
-    echo '<button class="submit" type="submit">Print View</button>';
+    echo '<button type="submit">Print View</button>';
     echo '</form>';
 
 

@@ -79,3 +79,11 @@ function validateDropdown(){
 
    
 }
+
+function colorCell(cell) {
+   // Get the selected color from the top table
+   var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex);
+   var selectedColor = document.getElementById(selectorId).value;
+   // Set the background color of the clicked cell to the selected color
+   cell.style.backgroundColor = selectedColor;
+}
