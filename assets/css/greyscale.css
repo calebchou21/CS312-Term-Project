@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 #logo{
     margin-right: 2%;
@@ -15,40 +18,38 @@ h2{
 }
 
 table{
-    margin: auto;
     float: left;
     border-collapse: collapse;
 }
 
 td, th {
-    border: 1px solid black;
-    padding: 5px;
-  }
+    border: 1.2px solid black;
+    font-size: 15px;
+}
 
 #table1{
     float: left;
-    margin-right: 10%;
+    width: 100px;
+    display: inline;
 }
 
 #table1 td tr:first-child{
     width: 20%;
 }
 
-#table td tr:last-child{
-    width: 80%;
-}
-
 #table2{
     float: left;
+    table-layout: fixed;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 #table2 td{
-    width: 5%;
-    height: 5%;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 0;
+    width: 30px;
+    height: 0;
 }
 
-
-td{
-    color: black;
-    font-size: 1.5em;
-}
