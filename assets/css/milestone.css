@@ -203,11 +203,22 @@ td, th {
 #table1{
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 100px;
+    width: 100%;
+    max-width: 50vw;
+}
+
+input[type="radio"]{
+    margin: 0 auto;
+    margin-top: 8px;
+    max-width: 10%;
 }
 
 #table1 tr td:first-child{
     width: 20%;
+}
+
+#table1 tr td:last-child{
+    width: 80%;
 }
 
 td{
@@ -226,5 +237,9 @@ td{
     height: 50px;
     text-align: center;
 }
+
+
+
+
 
 
