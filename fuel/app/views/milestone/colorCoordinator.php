@@ -109,7 +109,8 @@ if($table){
 
             $j = $i +1;
             echo "<td>";
-            echo "<p>".$j." Row</p>";
+            
+            echo "<p >Row ".$j." </p>";
             echo "</td>";
             echo "</tr>";
         }
