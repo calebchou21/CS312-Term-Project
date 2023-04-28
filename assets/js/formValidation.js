@@ -87,3 +87,22 @@ function colorCell(cell) {
    // Set the background color of the clicked cell to the selected color
    cell.style.backgroundColor = selectedColor;
 }
+
+
+
+
+var table = document.getElementById("table2");
+var rows = table.getElementsByTagName("tr");
+
+for (var i = 0; i < rows.length; i++) {
+  var cells = rows[i].getElementsByTagName("td");
+  for (var j = 0; j < cells.length; j++) {
+    cells[j].addEventListener("click", function() {
+      var cellIndex = this.cellIndex;
+      var rowIndex = this.parentNode.rowIndex;
+      var coords = String.fromCharCode(64 + cellIndex) + (rowIndex);
+      alert("Coordinates: " + coords);
+    });
+  }
+}
+
