@@ -112,9 +112,8 @@ if($table){
            
 
             $j = $i +1;
-            echo "<td>";
-            
-            echo "<p >Row ".$j." </p>";
+            echo "<td id='row$j'>";
+         
             echo "</td>";
             echo "</tr>";
         }
@@ -130,7 +129,8 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
-            echo "<td onclick='colorCell(this)'>";
+            echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>";
+            
            
             if($i == 0 && $j==0){continue;}
             
@@ -143,8 +143,6 @@ if($table){
         echo '</tr>';
     }
     echo '</table>';
-    echo '<div id="coordsContainer"></div>';
-    
     echo '<button type="submit">Print View</button>';
     echo '</form>';
 
@@ -154,4 +152,5 @@ if($table){
     
 
 ?>
+
 

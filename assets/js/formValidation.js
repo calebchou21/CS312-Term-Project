@@ -82,27 +82,28 @@ function validateDropdown(){
 
 function colorCell(cell) {
    // Get the selected color from the top table
-   var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex);
+   var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
+   let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+   let rowBox = document.getElementById(rowCell);
    var selectedColor = document.getElementById(selectorId).value;
    // Set the background color of the clicked cell to the selected color
    cell.style.backgroundColor = selectedColor;
+
+   var cellIndex = cell.cellIndex;
+   var rowIndex = cell.parentNode.rowIndex;
+   var coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
+ 
+
+   
+   
+   var coordsElement = document.createElement("p");
+   var coordsText = document.createTextNode(coords);
+   coordsElement.appendChild(coordsText);
+   rowBox.appendChild(coordsElement);
 }
 
 
 
 
-var table = document.getElementById("table2");
-var rows = table.getElementsByTagName("tr");
 
-for (var i = 0; i < rows.length; i++) {
-  var cells = rows[i].getElementsByTagName("td");
-  for (var j = 0; j < cells.length; j++) {
-    cells[j].addEventListener("click", function() {
-      var cellIndex = this.cellIndex;
-      var rowIndex = this.parentNode.rowIndex;
-      var coords = String.fromCharCode(64 + cellIndex) + (rowIndex);
-      alert("Coordinates: " + coords);
-    });
-  }
-}
 
