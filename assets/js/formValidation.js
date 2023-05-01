@@ -61,6 +61,7 @@ let colorError = document.querySelector("#colorFormError");
 
 
 function validateDropdown(){
+   let options = document.querySelectorAll(".colorOption");
    var selected = [];
    var colors = ['red','orange','yellow','green','blue','purple','grey','brown','black','teal'];
    var count = -1;
@@ -76,9 +77,9 @@ function validateDropdown(){
          colorError.classList.add("invisible");
       }
    }
-
-   
+  
 }
+
 
 function colorCell(cell) {
    // Get the selected color from the top table
@@ -92,15 +93,14 @@ function colorCell(cell) {
    var cellIndex = cell.cellIndex;
    var rowIndex = cell.parentNode.rowIndex;
    var coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
- 
 
-   
-   
    var coordsElement = document.createElement("p");
    var coordsText = document.createTextNode(coords);
    coordsElement.appendChild(coordsText);
    rowBox.appendChild(coordsElement);
 }
+
+
 
 
 
