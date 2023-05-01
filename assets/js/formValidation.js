@@ -56,29 +56,40 @@ function checkForm(event) {
    
 }
 
-let allSelectors = document.getElementsByTagName("select");
-let colorError = document.querySelector("#colorFormError");
 
+const colorError = document.querySelector("#colorFormError");
+const dropdowns = document.querySelectorAll('select');
 
-function validateDropdown(){
-   let options = document.querySelectorAll(".colorOption");
-   var selected = [];
-   var colors = ['red','orange','yellow','green','blue','purple','grey','brown','black','teal'];
-   var count = -1;
-   for(x of allSelectors){
-      selected.push(x.value);
-      count++;
-      if((new Set(selected)).size !== selected.length){
-         colorError.classList.remove("invisible");
-         colorError.classList.add("error-message");
-         x.value = colors[count];
-      }else{
-         colorError.classList.remove("error-message");
-         colorError.classList.add("invisible");
-      }
-   }
-  
-}
+//Makes sure no two colors selected at same time
+dropdowns.forEach(dropdown => {
+  // Store the initial value as the previous value
+  // The dataset property stores info on a specific element
+  dropdown.dataset.previousValue = dropdown.value;
+
+  dropdown.addEventListener('change', event => {
+    const selectedValue = event.target.value;
+    const dropdownId = event.target.id;
+
+    // This just selects all dropdowns and selected values that aren't the 'current one'
+    const otherDropdowns = Array.from(dropdowns).filter(d => d.id !== dropdownId);
+    const otherSelectedValues = otherDropdowns.map(d => d.value);
+
+    if (otherSelectedValues.includes(selectedValue)) {
+      //If out current selected value is in the other vals, we need to revert it
+      // Revert by grabbing the previous value from the 'current selector' dataset 
+      event.target.value = event.target.dataset.previousValue;
+
+      colorError.classList.remove('invisible');
+      colorError.classList.add('error-message');
+      
+    } else {
+      //If we can select, than we just need to change the previous value in the dataset
+      event.target.dataset.previousValue = selectedValue;
+      colorError.classList.add('invisible');
+    }
+  });
+});
+
 
 
 function colorCell(cell) {

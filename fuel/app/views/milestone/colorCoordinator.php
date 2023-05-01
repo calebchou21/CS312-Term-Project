@@ -59,7 +59,7 @@ if($table){
             echo '<select name="Color'.$i.'" id = ';
             echo 'selector';
             echo $i;
-            echo ' onchange="validateDropdown()">';
+            echo '>';
 
             
 
