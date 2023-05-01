@@ -32,7 +32,7 @@
     <label for="num-colors">Enter number of colors</label>
     <p class="invisible" id="colorError">Please enter number 1-10</p>  
     <input type="number" id="num-colors" name="num-colors">
-    <button type="submit">Submit</button>
+    <button class="submit" type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
 
@@ -56,46 +56,46 @@ if($table){
 
            
 
-            echo '<select id = ';
+            echo '<select name="Color'.$i.'" id = ';
             echo 'selector';
             echo $i;
-            echo ' onchange="validateDropdown()">';
+            echo '>';
 
             
 
     
             //Build drop down menus (this sucks)
-            echo '<option value="Red" '; 
+            echo '<option class="colorOption" value="Red" '; 
             if($i==0){echo "selected";}
             echo '> Red </Option>';
 
            
-            echo '<option value="orange" '; 
+            echo '<option class="colorOption" value="orange" '; 
 
             if($i==1){echo "selected";}
             echo '> Orange </Option>';
-            echo '<option value="Yellow" '; 
+            echo '<option class="colorOption" value="Yellow" '; 
             if($i==2){echo "selected";}
             echo '> Yellow </Option>';
-            echo '<option value="Green" '; 
+            echo '<option class="colorOption" value="Green" '; 
             if($i==3){echo "selected";}
             echo '> Green </Option>';
-            echo '<option value="Blue" '; 
+            echo '<option class="colorOption" value="Blue" '; 
             if($i==4){echo "selected";}
             echo '> Blue </Option>';
-            echo '<option value="Purple" '; 
+            echo '<option class="colorOption" value="Purple" '; 
             if($i==5){echo "selected";}
             echo '> Purple </Option>';
-            echo '<option value="Grey" '; 
+            echo '<option class="colorOption" value="Grey" '; 
             if($i==6){echo "selected";}
             echo '> Grey </Option>';
-            echo '<option value="Brown" '; 
+            echo '<option class="colorOption" value="Brown" '; 
             if($i==7){echo "selected";}
             echo '> Brown </Option>';
-            echo '<option value="Black" '; 
+            echo '<option class="colorOption" value="Black" '; 
             if($i==8){echo "selected";}
             echo '> Black </Option>';
-            echo '<option value="Teal" '; 
+            echo '<option class="colorOption" value="Teal" '; 
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
             echo "</select>";
@@ -120,7 +120,6 @@ if($table){
     echo "</table>";
 
     echo '<table id=table2>';
-    
 
     $letter = 'A';
     $number = 1;
@@ -129,9 +128,9 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
-            echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>";
+            /* echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>"; */
             
-           
+            echo '<td>';    
             if($i == 0 && $j==0){continue;}
             
             if($i==0){echo '<p>'; echo $letter++; echo '</p>';} 
@@ -143,7 +142,7 @@ if($table){
         echo '</tr>';
     }
     echo '</table>';
-    echo '<button type="submit">Print View</button>';
+    echo '<button class="submit" type="submit">Print View</button>';
     echo '</form>';
 
 
