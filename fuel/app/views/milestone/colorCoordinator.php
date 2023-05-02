@@ -129,7 +129,7 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
-            echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>";
+            echo "<td onclick='colorCell(this)' >";
             
            
             if($i == 0 && $j==0){continue;}
