@@ -107,11 +107,11 @@ function colorCell(cell) {
 
    var coordsElement = document.createElement("p");
    var coordsText = document.createTextNode(coords);
+   
    coordsElement.appendChild(coordsText);
+  
    rowBox.appendChild(coordsElement);
 }
-
-
 
 
 

@@ -128,9 +128,10 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
+            echo "<td onclick='colorCell(this)' >";
             /* echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>"; */
             
-            echo '<td>';    
+               
             if($i == 0 && $j==0){continue;}
             
             if($i==0){echo '<p>'; echo $letter++; echo '</p>';} 

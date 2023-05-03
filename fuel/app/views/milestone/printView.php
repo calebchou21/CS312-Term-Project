@@ -12,7 +12,7 @@ echo '<table id="table1">';
             echo "</td>";
             $j = $i +1;
             echo "<td>";
-            echo "<p>".$j." Row</p>";
+            echo "<p>".$j."</p>";
             echo "</td>";
             echo "</tr>";
         }
