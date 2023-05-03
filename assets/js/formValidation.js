@@ -113,6 +113,41 @@ function colorCell(cell) {
    rowBox.appendChild(coordsElement);
 }
 
+// Create an object to store the current color for each row
+const currentColors = {};
+
+// Get all of the color dropdowns
+const dropdownss = document.querySelectorAll('select');
+
+// Attach a change listener to each dropdown
+dropdownss.forEach(dropdown => {
+  const index = dropdown.id.slice(-1);
+
+  // Set the initial color of the row
+  currentColors[index] = dropdown.value.toLowerCase();
+
+  dropdown.addEventListener('change', event => {
+    const newColor = event.target.value.toLowerCase();
+    const oldColor = currentColors[index];
+
+    // Update the current color of the row
+    currentColors[index] = newColor;
+
+    // Get all of the cells in the bottom table
+    const cells = document.querySelectorAll('#table2 td');
+
+    // Loop through the cells and update their color if necessary
+    cells.forEach(cell => {
+      if (cell.style.backgroundColor === oldColor) {
+        cell.style.backgroundColor = newColor;
+      }
+    });
+  });
+});
+
+
+
+ 
 
 
 
