@@ -70,7 +70,7 @@ if($table){
             echo '> Red </Option>';
 
            
-            echo '<option class="colorOption" value="orange" '; 
+            echo '<option class="colorOption" value="Orange" '; 
 
             if($i==1){echo "selected";}
             echo '> Orange </Option>';
@@ -151,8 +151,8 @@ if($table){
 
 
 }
+
     
 
 ?>
-
 
