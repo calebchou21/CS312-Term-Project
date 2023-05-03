@@ -93,32 +93,32 @@ dropdowns.forEach(dropdown => {
   });
 });
 
-//TODO
-function changeAllCells(prevColor, color){
-   colorGrid = document.querySelectorAll("#table2 td")
-   colorGrid.forEach(td=>{
-      const bgColor = window.getComputedStyle(td).backgroundColor;
-      console.log("Background color of td:", bgColor); 
-   })
-
-}
 
 function colorCell(cell) {
-   // Get the selected color from the top table
-   var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
-   let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+  // Get the selected color from the top table
+  let selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
+  let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
 
-   let rowBox = document.getElementById(rowCell);
-   var selectedColor = document.getElementById(selectorId).value;
-   // Set the background color of the clicked cell to the selected color
-   cell.style.backgroundColor = selectedColor;
+  let rowBox = document.getElementById(rowCell);
+  let selectedColor = document.getElementById(selectorId).value;
+  // Set the background color of the clicked cell to the selected color
+  cell.style.backgroundColor = selectedColor;
 
-   var cellIndex = cell.cellIndex;
-   var rowIndex = cell.parentNode.rowIndex;
-   var coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
-
-   var coordsText = document.createTextNode(coords);
-   rowBox.appendChild(coordsText);
+  let cellIndex = cell.cellIndex;
+  let rowIndex = cell.parentNode.rowIndex;
+  let coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
+  let coordsText = coords + ", ";
+  let coordinateArray = rowBox.innerHTML.split(" ");
+  
+  //Organize alphabetically
+  if(coordinateArray.includes(coordsText.trim())){
+    return;
+  }
+  else{
+    coordinateArray.push(coordsText);
+    coordinateArray.sort();
+    rowBox.innerHTML = coordinateArray.join(" ");
+  }
 }
 
 // Create an object to store the current color for each row
