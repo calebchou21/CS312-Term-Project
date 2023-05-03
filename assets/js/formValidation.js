@@ -84,18 +84,29 @@ dropdowns.forEach(dropdown => {
       
     } else {
       //If we can select, than we just need to change the previous value in the dataset
+      let prev = event.target.dataset.previousValue;
       event.target.dataset.previousValue = selectedValue;
       colorError.classList.add('invisible');
+      //We call with the actual previous value and the new previous value (actually the current value)
+      changeAllCells(prev, event.target.dataset.previousValue);
     }
   });
 });
 
+//TODO
+function changeAllCells(prevColor, color){
+   colorGrid = document.querySelectorAll("#table2 td")
+   colorGrid.forEach(td=>{
+      const bgColor = window.getComputedStyle(td).backgroundColor;
+      console.log("Background color of td:", bgColor); 
+   })
 
+}
 
 function colorCell(cell) {
    // Get the selected color from the top table
    var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
-   let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+   let rowCell = "row" + (document.querySelector('input[name="options"]:checked p').parentNode.parentNode.rowIndex+1)
    let rowBox = document.getElementById(rowCell);
    var selectedColor = document.getElementById(selectorId).value;
    // Set the background color of the clicked cell to the selected color

@@ -113,7 +113,7 @@ if($table){
 
             $j = $i +1;
             echo "<td id='row$j'>";
-         
+            echo "<p></p>";
             echo "</td>";
             echo "</tr>";
         }
@@ -128,9 +128,9 @@ if($table){
         echo '<tr>';
         
         for($j=0; $j <= $rowCols; $j++){
-            /* echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>"; */
-            
-            echo '<td>';    
+
+
+            echo "<td onclick='colorCell(this)' onclick='colorCord(this)'>";     
             if($i == 0 && $j==0){continue;}
             
             if($i==0){echo '<p>'; echo $letter++; echo '</p>';} 
