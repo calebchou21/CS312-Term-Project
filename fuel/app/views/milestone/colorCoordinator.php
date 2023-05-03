@@ -113,7 +113,6 @@ if($table){
 
             $j = $i +1;
             echo "<td id='row$j'>";
-            echo "<p></p>";
             echo "</td>";
             echo "</tr>";
         }

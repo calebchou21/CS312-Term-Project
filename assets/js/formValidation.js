@@ -106,7 +106,8 @@ function changeAllCells(prevColor, color){
 function colorCell(cell) {
    // Get the selected color from the top table
    var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
-   let rowCell = "row" + (document.querySelector('input[name="options"]:checked p').parentNode.parentNode.rowIndex+1)
+   let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+
    let rowBox = document.getElementById(rowCell);
    var selectedColor = document.getElementById(selectorId).value;
    // Set the background color of the clicked cell to the selected color
@@ -116,13 +117,11 @@ function colorCell(cell) {
    var rowIndex = cell.parentNode.rowIndex;
    var coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
 
-   var coordsElement = document.createElement("p");
    var coordsText = document.createTextNode(coords);
-   
-   coordsElement.appendChild(coordsText);
-  
-   rowBox.appendChild(coordsElement);
+   rowBox.appendChild(coordsText);
 }
+
+
 
 
 
