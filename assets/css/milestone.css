@@ -205,6 +205,7 @@ td, th {
     margin-bottom: 30px;
     width: 100%;
     max-width: 40vw;
+    table-layout: fixed;
 }
 
 input[type="radio"]{
@@ -214,13 +215,13 @@ input[type="radio"]{
 }
 
 #table1 tr td:first-child{
-    width: 20%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 2500px;
 }
 
 #table1 tr td:last-child{
-    width: 80%;
-    min-width: 400px;
+    min-width: 300px;
+    word-break: break-all;
 }
 
 td{
