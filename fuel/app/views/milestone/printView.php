@@ -12,7 +12,9 @@ echo '<table id="table1">';
             echo "</td>";
             $j = $i +1;
             echo "<td>";
-            echo "<p>".$j."</p>";
+            echo "<p>";
+            if(isset($_POST['text'.$j])) echo $_POST['text'.$j];
+            echo "</p>";
             echo "</td>";
             echo "</tr>";
         }
