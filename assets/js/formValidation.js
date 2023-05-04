@@ -110,7 +110,7 @@ function colorCell(cell) {
   let rowIndex = cell.parentNode.rowIndex;
   let coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
   let coordsText = coords + ", ";
-  let coordinateArray = rowBox.innerHTML.split(" ");
+  let coordinateArray = rowBox.value.split(" ");
   
   //Organize alphabetically
   if(coordinateArray.includes(coordsText.trim())){
@@ -119,7 +119,7 @@ function colorCell(cell) {
   else{
     coordinateArray.push(coordsText);
     coordinateArray.sort();
-    rowBox.innerHTML = coordinateArray.join(" ");
+    rowBox.value = coordinateArray.join(" ");
   }
 }
 

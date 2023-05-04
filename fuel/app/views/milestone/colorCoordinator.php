@@ -3,6 +3,7 @@
             <div><?php echo Asset::img("goodLogo.png", array('id'=>'logo')) ?></div>
             <h1>JCC Incorporated</h1>
             <h2>An awesome company</h2>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         </div>
         <div class="navbar">
             <li><a href = "./index">Home</a></li>
@@ -112,8 +113,9 @@ if($table){
 
            
 
-            $j = $i +1;
-            echo "<td id='row$j'>";
+            $j = $i+1;
+            echo "<td id='row$j' name = 'row$j'>";
+            echo "<input id='text$j' name='text$j' type='text' readonly>";
             echo "</td>";
             echo "</tr>";
         }
