@@ -22,7 +22,7 @@
 return array(
 	'default' => array(
 		'connection' => array(
-			'dsn'      => 'mysql:host=localhost;dbname=fuel_dev',
+			'dsn'      => 'mysql:host=faure.cs.colostate.edu;dbname={ calebrc }',
 			'username' => 'calebrc',
 			'password' => '835407623',
 		),
