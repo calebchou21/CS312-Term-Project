@@ -98,7 +98,7 @@ dropdowns.forEach(dropdown => {
 function colorCell(cell) {
    // Get the selected color from the top table
    var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
-   let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+   let rowCell = "text" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
 
   
    let rowBox = document.getElementById(rowCell);
