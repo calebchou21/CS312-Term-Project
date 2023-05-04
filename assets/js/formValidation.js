@@ -106,12 +106,21 @@ function colorCell(cell) {
    // Set the background color of the clicked cell to the selected color
    cell.style.backgroundColor = selectedColor;
 
-   var cellIndex = cell.cellIndex;
-   var rowIndex = cell.parentNode.rowIndex;
-   var coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
-
-   var coordsText = document.createTextNode(coords);
-   rowBox.appendChild(coordsText);
+  let cellIndex = cell.cellIndex;
+  let rowIndex = cell.parentNode.rowIndex;
+  let coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
+  let coordsText = coords + ", ";
+  let coordinateArray = rowBox.innerHTML.split(" ");
+  
+  //Organize alphabetically
+  if(coordinateArray.includes(coordsText.trim())){
+    return;
+  }
+  else{
+    coordinateArray.push(coordsText);
+    coordinateArray.sort();
+    rowBox.innerHTML = coordinateArray.join(" ");
+  }
 }
 
 // Create an object to store the current color for each row
