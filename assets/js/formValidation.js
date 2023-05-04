@@ -97,7 +97,7 @@ dropdowns.forEach(dropdown => {
 function colorCell(cell) {
   // Get the selected color from the top table
   let selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
-  let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
+  let rowCell = "text" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
 
   let rowBox = document.getElementById(rowCell);
   let selectedColor = document.getElementById(selectorId).value;
@@ -108,7 +108,7 @@ function colorCell(cell) {
   let rowIndex = cell.parentNode.rowIndex;
   let coords = String.fromCharCode(64 + cellIndex) + (rowIndex );
   let coordsText = coords + ", ";
-  let coordinateArray = rowBox.innerHTML.split(" ");
+  let coordinateArray = rowBox.value.split(" ");
   
   //Organize alphabetically
   if(coordinateArray.includes(coordsText.trim())){
@@ -117,7 +117,7 @@ function colorCell(cell) {
   else{
     coordinateArray.push(coordsText);
     coordinateArray.sort();
-    rowBox.innerHTML = coordinateArray.join(" ");
+    rowBox.value = coordinateArray.join(" ");
   }
 }
 
