@@ -100,7 +100,7 @@ function colorCell(cell) {
    var selectorId = "selector" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex)
    let rowCell = "row" + (document.querySelector('input[name="options"]:checked').parentNode.parentNode.rowIndex+1)
 
-   let rowCell = "row" + (document.querySelector('input[name="options"]:checked ').parentNode.parentNode.rowIndex+1)
+  
    let rowBox = document.getElementById(rowCell);
    var selectedColor = document.getElementById(selectorId).value;
    // Set the background color of the clicked cell to the selected color

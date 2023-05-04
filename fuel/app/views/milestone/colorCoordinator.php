@@ -99,6 +99,7 @@ if($table){
             if($i==9){echo "selected";}
             echo '> Teal </Option>';
             echo "</select>";
+            
 
 
             echo "<input type='radio' name='options' value='option1' ";
