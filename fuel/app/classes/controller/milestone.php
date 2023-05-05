@@ -59,6 +59,12 @@ class Controller_Milestone extends Controller_Template {
        $data['rowCols'] = $rowCols;
        $this->template->content = View::forge('milestone/printView', $data);
    }
+// I Think we need to do something here to handle the post from colorCoordinator so the add.php can run its course."
+   public function post_add(){
+     $data = array();
+     $this->template->content = View::forge('milestone/add', $data);
+     action_colorCoordinator();
+   }
 
    
 
