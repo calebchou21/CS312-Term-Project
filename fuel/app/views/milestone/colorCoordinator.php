@@ -56,10 +56,6 @@
     <button class="submit" type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
-<button id = "addBtn" name = "addBtn">Add Color</button>
-
-
-
 
 <?php 
 
