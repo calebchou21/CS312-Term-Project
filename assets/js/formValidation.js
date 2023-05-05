@@ -7,7 +7,7 @@ colorWidget.addEventListener("keyup", checkColorNum);
 
 function checkColorNum() {
     let colorInput = colorWidget.value;
-    colorValid = colorInput >= 1 && colorInput <= 10;
+    colorValid = colorInput >= 1 && colorInput <= Number(document.getElementById("colorsDB").innerHTML);
     return colorValid;
 }
 
