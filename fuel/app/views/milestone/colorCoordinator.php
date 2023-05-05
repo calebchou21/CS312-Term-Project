@@ -4,6 +4,22 @@
             <h1>JCC Incorporated</h1>
             <h2>An awesome company</h2>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                                $("#addBtn").click(function(){
+                        $.name = prompt("Color Name");
+                        $.hexVal = prompt("Hex Value (Do not include the #)");
+                        $.hexVal = parseInt(hexVal, 16);
+                        $.ajax({
+                            method: "POST",
+                            url: "add.php",
+                            data: { colorName: $.name, hexVal: $.hexVal }
+                        }).done(function( response ) {
+                            alert("Color Added!");
+                        });
+                    });
+                });
+                        </script>
         </div>
         <div class="navbar">
             <li><a href = "./index">Home</a></li>
@@ -40,6 +56,7 @@
     <button class="submit" type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
+<button id = "addBtn" name = "addBtn">Add Color</button>
 
 
 
