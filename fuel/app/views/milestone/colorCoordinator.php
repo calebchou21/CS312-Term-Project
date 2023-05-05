@@ -4,6 +4,22 @@
             <h1>JCC Incorporated</h1>
             <h2>An awesome company</h2>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                                $("#addBtn").click(function(){
+                        $.name = prompt("Color Name");
+                        $.hexVal = prompt("Hex Value (Do not include the #)");
+                        $.hexVal = parseInt(hexVal, 16);
+                        $.ajax({
+                            method: "POST",
+                            url: "add.php",
+                            data: { colorName: $.name, hexVal: $.hexVal }
+                        }).done(function( response ) {
+                            alert("Color Added!");
+                        });
+                    });
+                });
+                        </script>
         </div>
         <div class="navbar">
             <li><a href = "./index">Home</a></li>
@@ -24,21 +40,22 @@
             ?>>Color Coordinator</a></li>
         </div>
 </header>
- <?php  echo Asset::js("formValidation.js", array('defer'=>''));  ?>  
+ <?php  echo Asset::js("formValidation.js", array('defer'=>''));  
+    $query2 = DB::query('SELECT COUNT(*) FROM Colors', DB::SELECT)->execute();
+    $colorsDB = $query2[0]['COUNT(*)'];
+    echo '<p id="colorsDB" style="display:none">'.$colorsDB.'</p>';
+ ?>  
 
 <form method="get" id="color-form">
     <label for="rows-columns">Enter number of rows and columns</label>   
     <p class="invisible" id="rowColError">Please enter number 1-26</p>
     <input type="text" id="rows-columns" name="rows-columns">
     <label for="num-colors">Enter number of colors</label>
-    <p class="invisible" id="colorError">Please enter number 1-10</p>  
+    <?php echo '<p class="invisible" id="colorError">Please enter number 1-'.$colorsDB.'</p>'; ?>
     <input type="number" id="num-colors" name="num-colors">
     <button class="submit" type="submit">Submit</button>
     <p id="colorFormError" class="invisible">Please do not select duplicates</p>
 </form> 
-
-
-
 
 <?php 
 
@@ -64,43 +81,13 @@ if($table){
 
             
 
-    
+            $query = DB::query('SELECT * FROM Colors', DB::SELECT)->execute();
             //Build drop down menus (this sucks)
-            echo '<option class="colorOption" value="Red" '; 
-            if($i==0){echo "selected";}
-            echo '> Red </Option>';
-
-           
-            echo '<option class="colorOption" value="Orange" '; 
-
-            if($i==1){echo "selected";}
-            echo '> Orange </Option>';
-            echo '<option class="colorOption" value="Yellow" '; 
-            if($i==2){echo "selected";}
-            echo '> Yellow </Option>';
-            echo '<option class="colorOption" value="Green" '; 
-            if($i==3){echo "selected";}
-            echo '> Green </Option>';
-            echo '<option class="colorOption" value="Blue" '; 
-            if($i==4){echo "selected";}
-            echo '> Blue </Option>';
-            echo '<option class="colorOption" value="Purple" '; 
-            if($i==5){echo "selected";}
-            echo '> Purple </Option>';
-            echo '<option class="colorOption" value="Grey" '; 
-            if($i==6){echo "selected";}
-            echo '> Grey </Option>';
-            echo '<option class="colorOption" value="Brown" '; 
-            if($i==7){echo "selected";}
-            echo '> Brown </Option>';
-            echo '<option class="colorOption" value="Black" '; 
-            if($i==8){echo "selected";}
-            echo '> Black </Option>';
-            echo '<option class="colorOption" value="Teal" '; 
-            if($i==9){echo "selected";}
-            echo '> Teal </Option>';
-            echo "</select>";
-            
+            for($k = 0; $k < $colorsDB; $k++){
+                echo '<option class="colorOption" value="'.$query[$k]['colorName'].'"'; 
+                if($i==$k){echo "selected";}
+                echo '>'.$query[$k]['colorName'].'</Option>';
+            }
 
 
             echo "<input type='radio' name='options' value='option1' ";

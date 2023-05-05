@@ -1,2 +1,12 @@
 <?php defined('COREPATH') or exit('No direct script access allowed'); ?>
 
+ERROR - 2023-05-04 21:33:47 --> 1044 - SQLSTATE[HY000] [1044] Access denied for user 'calebrc'@'%' to database '{ calebrc }' in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:34:11 --> 1044 - SQLSTATE[HY000] [1044] Access denied for user 'calebrc'@'%' to database '{calebrc}' in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:35:02 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user '{calebrc}'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:35:05 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user '{calebrc}'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:35:30 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user 'calebrc'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:35:44 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user 'calebrc'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:36:31 --> 1044 - SQLSTATE[HY000] [1044] Access denied for user 'calebrc'@'%' to database ' calebrc' in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:37:07 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user '{ calebrc }'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:38:41 --> 1044 - SQLSTATE[HY000] [1044] Access denied for user 'calebrc'@'%' to database '{ calebrc }' in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
+ERROR - 2023-05-04 21:38:54 --> 1045 - SQLSTATE[HY000] [1045] Access denied for user '{calebrc}'@'beethoven.cs.colostate.edu' (using password: YES) in /s/parsons/n/under/cjkleesp/local_html/m1/fuel/core/classes/database/pdo/connection.php on line 86
